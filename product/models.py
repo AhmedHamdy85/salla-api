@@ -4,7 +4,7 @@ from django.db import models
 class Category(models.TextChoices):
     COMPUTERS='computer'
     FOOD='food'
-    KIDS='Kids'
+    KIDS='kids'
 
 class Product(models.Model):
     name= models.CharField(max_length=100)
