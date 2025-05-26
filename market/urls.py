@@ -22,3 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/',include('product.urls'))
 ]+ static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+
+
+handler404='utils.error_view.handeler404'
+handler500='utils.error_view.handeler500'
